@@ -3,216 +3,219 @@
 // Supplemental schedule service_ids
 $supplemental_service_id = array(934);
 
+
+$routes_config = array(
+
+// Starting 7/5/2015 (Mon-Fri)
+// ID 2361
+// Year round calendar (Mon-Fri) 
+// ID 792
+
 // Mainline / Northound / Weekday
-$mainline_north_weekday_url = 'weekday/north';
-$mainline_north_weekday_route_id = 1;
-$mainline_north_weekday_direction_id = 5;
-$mainline_north_weekday_common_stop_id = 1252;
-$mainline_north_weekday_order = 'ASC';
-$mainline_north_weekday_service_label = 'Weekday, effective 19-January-2014';
-$mainline_north_weekday_service_ids = array(792,810,813,934);
-
-if ($_GET['urlvar']==$mainline_north_weekday_url || $_GET['urlvar']==$mainline_north_weekday_url.'/')
-{$route_id=$mainline_north_weekday_route_id;
-$direction_id=$mainline_north_weekday_direction_id;
-$service_label=$mainline_north_weekday_service_label;
-$order=$mainline_north_weekday_order;
-$common_stop=$mainline_north_weekday_common_stop_id;
-$service_ids = $mainline_north_weekday_service_ids;
-}
-
-
-
+    'weekday/north'  => array(
+    'route_id' => 1,
+    'direction_id' => 5,
+    'common_stop_id' => 1252,
+    'order' => 'ASC',
+    'service_label' => 'Weekday, beginning 6-July-2015',
+    'service_ids' => array(792,2361)
+    ),
+        
 // Mainline / Southbound / Weekday
-$mainline_south_weekday_url = 'weekday/south';
-$mainline_south_weekday_route_id = 1;
-$mainline_south_weekday_direction_id = 6;
-$mainline_south_weekday_common_stop_id = 1252;
-$mainline_south_weekday_common_order = 'DESC';
-$mainline_south_weekday_service_label = 'Weekday, effective 19-January-2014';
-$mainline_south_weekday_service_ids = array(792,810,813,934);
+'weekday/south' => array(
+	'route_id' => 1,
+	'direction_id' => 6,
+	'common_stop_id' => 1252,
+	'common_order' => 'DESC',
+	'service_label' => 'Weekday, beginning 6-July-2015',
+	'service_ids' => array(792,2361)
+),
 
-if ($_GET['urlvar']==$mainline_south_weekday_url || $_GET['urlvar']==$mainline_south_weekday_url.'/')
-{$route_id=$mainline_south_weekday_route_id;
-$direction_id=$mainline_south_weekday_direction_id;
-$service_label=$mainline_south_weekday_service_label;
-$order=$mainline_south_weekday_common_order;
-$common_stop=$mainline_south_weekday_common_stop_id;
-$service_ids = $mainline_south_weekday_service_ids;
-}
+// Mainline / Northound / Weekday
+    'weekday/north/ending'  => array(
+    'route_id' => 1,
+    'direction_id' => 5,
+    'common_stop_id' => 1252,
+    'order' => 'ASC',
+    'service_label' => 'Weekday, ending 4-July-2015',
+    'service_ids' => array(792,810,813,934,2360)
+    ),
+    
+    //http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=1&service_id=2360&direction_id=5
+    
+// Mainline / Southbound / Weekday
+'weekday/south/ending' => array(
+	'route_id' => 1,
+	'direction_id' => 6,
+	'common_stop_id' => 1252,
+	'common_order' => 'DESC',
+	'service_label' => 'Weekday, ending 4-July-2015',
+	'service_ids' => array(792,810,813,934,2360)
+),
 
 // Mainline / Northound / Saturday
-$mainline_north_saturday_url = 'saturday/north';
-$mainline_north_saturday_route_id = 1;
-$mainline_north_saturday_direction_id = 5;
-$mainline_north_saturday_common_stop_id = 1252;
-$mainline_north_saturday_common_order = 'ASC';
-$mainline_north_saturday_service_label = 'saturday';
-$mainline_north_saturday_service_ids = array(791);
 
-if ($_GET['urlvar']==$mainline_north_saturday_url || $_GET['urlvar']==$mainline_north_saturday_url.'/')
-{$route_id=$mainline_north_saturday_route_id;
-$direction_id=$mainline_north_saturday_direction_id;
-$service_label=$mainline_north_saturday_service_label;
-$order=$mainline_north_saturday_common_order;
-$common_stop=$mainline_north_saturday_common_stop_id;
-$service_ids = $mainline_north_saturday_service_ids;}
+'saturday/north' => array(
+	'route_id' => 1,
+	'direction_id' => 5,
+	'common_stop_id' => 1252,
+	'common_order' => 'ASC',
+	'service_label' => 'saturday',
+	'service_ids' => array(2364,2366)
+),
+
+
+// service_id for service ending 5-July-2015: 2364
+// http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=1&service_id=2364&direction_id=5
+
+// continuing Sat-Sun service: 2366 http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=1&service_id=2366&direction_id=5
 
 // Mainline / Southbound / Saturday
-$mainline_south_saturday_url = 'saturday/south';
-$mainline_south_saturday_route_id = 1;
-$mainline_south_saturday_direction_id = 6;
-$mainline_south_saturday_common_stop_id = 1252;
-$mainline_south_saturday_common_order = 'DESC';
-$mainline_south_saturday_service_label = 'Saturday';
-$mainline_south_saturday_service_ids = array(791);
+'saturday/south/ending' => array(
+	'route_id' => 1,
+	'direction_id' => 6,
+	'common_stop_id' => 1252,
+	'common_order' => 'DESC',
+	'service_label' => 'Saturday',
+	'service_ids' => array(2366)
+),
 
-if ($_GET['urlvar']==$mainline_south_saturday_url || $_GET['urlvar']==$mainline_south_saturday_url.'/')
-{$route_id=$mainline_south_saturday_route_id;
-$direction_id=$mainline_south_saturday_direction_id;
-$service_label=$mainline_south_saturday_service_label;
-$order=$mainline_south_saturday_common_order;
-$common_stop=$mainline_south_saturday_common_stop_id;
-$service_ids = $mainline_south_saturday_service_ids;}
 
+
+// service_id for service ending 5-July-2015: 2364
+// http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=1&service_id=2364&direction_id=5
+
+// continuing Sat-Sun service: 2366 http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=1&service_id=2366&direction_id=5
+
+// Mainline / Southbound / Saturday
+'saturday/south/ending' => array(
+	'route_id' => 1,
+	'direction_id' => 6,
+	'common_stop_id' => 1252,
+	'common_order' => 'DESC',
+	'service_label' => 'Saturday',
+	'service_ids' => array(2364,2366)
+),
 
 // Mainline / Northound / Sunday
-$mainline_north_sunday_url = 'sunday/north';
-$mainline_north_sunday_route_id = 1;
-$mainline_north_sunday_direction_id = 5;
-$mainline_north_sunday_common_stop_id = 1252;
-$mainline_north_sunday_common_order = 'ASC';
-$mainline_north_sunday_service_label = 'sunday';
-$mainline_north_sunday_service_ids = array(790);
 
-if ($_GET['urlvar']==$mainline_north_sunday_url || $_GET['urlvar']==$mainline_north_sunday_url.'/')
-{$route_id=$mainline_north_sunday_route_id;
-$direction_id=$mainline_north_sunday_direction_id;
-$service_label=$mainline_north_sunday_service_label;
-$order=$mainline_north_sunday_common_order;
-$common_stop=$mainline_north_sunday_common_stop_id;
-$service_ids = $mainline_north_sunday_service_ids;}
+'saturday/north' => array(
+	'route_id' => 1,
+	'direction_id' => 5,
+	'common_stop_id' => 1252,
+	'common_order' => 'ASC',
+	'service_label' => 'saturday',
+	'service_ids' => array(2366)
+),
 
 // Mainline / Southbound / Sunday
-$mainline_south_sunday_url = 'sunday/south';
-$mainline_south_sunday_route_id = 1;
-$mainline_south_sunday_direction_id = 6;
-$mainline_south_sunday_common_stop_id = 1252;
-$mainline_south_sunday_common_order = 'DESC';
-$mainline_south_sunday_service_label = 'sunday';
-$mainline_south_sunday_service_ids = array(790);
-
-if ($_GET['urlvar']==$mainline_south_sunday_url || $_GET['urlvar']==$mainline_south_sunday_url.'/')
-{$route_id=$mainline_south_sunday_route_id;
-$direction_id=$mainline_south_sunday_direction_id;
-$service_label=$mainline_south_sunday_service_label;
-$order=$mainline_south_sunday_common_order;
-$common_stop=$mainline_south_sunday_common_stop_id;
-$service_ids = $mainline_south_sunday_service_ids;
-}
-
+'sunday/south' => array(
+	'route_id' => 1,
+	'direction_id' => 6,
+	'common_stop_id' => 1252,
+	'common_order' => 'DESC',
+	'service_label' => 'sunday',
+	'service_ids' => array(2366)
+),
 
 // SoHum intercity / North
-$sohum_intercity_north_weekday_url = 'sohum-intercity/north';
-$sohum_intercity_north_weekday_route_id = 822;
-$sohum_intercity_north_weekday_direction_id = 5;
-$sohum_intercity_north_weekday_common_stop_id = 1276;
-$sohum_intercity_north_weekday_common_order = 'ASC';
-$sohum_intercity_north_weekday_service_label = 'Weekday';
-$sohum_intercity_north_weekday_service_ids = array(792,810,813,934);
-
-if ($_GET['urlvar']==$sohum_intercity_north_weekday_url || $_GET['urlvar']==$sohum_intercity_north_weekday_url.'/')
-{$route_id=$sohum_intercity_north_weekday_route_id;
-$direction_id=$sohum_intercity_north_weekday_direction_id;
-$service_label=$sohum_intercity_north_weekday_service_label;
-$order=$sohum_intercity_north_weekday_common_order;
-$common_stop=$sohum_intercity_north_weekday_common_stop_id;
-$service_ids = $sohum_intercity_north_weekday_service_ids;
-}
+'sohum-intercity/north' =>
+	array(
+		'route_id' => 822,
+		'direction_id' => 5,
+		'common_stop_id' => 1276,
+		'common_order' => 'ASC',
+		'service_label' => 'Weekday',
+		'service_ids' => array(792,810,813,934)
+	),
 
 // SoHum intercity / South
-$sohum_intercity_south_weekday_url = 'sohum-intercity/south';
-$sohum_intercity_south_weekday_route_id = 822;
-$sohum_intercity_south_weekday_direction_id = 6;
-$sohum_intercity_south_weekday_common_stop_id = 1255;
-$sohum_intercity_south_weekday_common_order = 'DESC';
-$sohum_intercity_south_weekday_service_label = 'Weekday';
-$sohum_intercity_south_weekday_service_ids = array(792,810,813,934);
+'sohum-intercity/south' =>
+array (
+	'route_id' => 822,
+	'direction_id' => 6,
+	'common_stop_id' => 1255,
+	'common_order' => 'DESC',
+	'service_label' => 'Weekday',
+	'service_ids' => array(792,810,813,934)
+),
 
-if ($_GET['urlvar']==$sohum_intercity_south_weekday_url || $_GET['urlvar']==$sohum_intercity_south_weekday_url.'/')
-{$route_id=$sohum_intercity_south_weekday_route_id;
-$direction_id=$sohum_intercity_south_weekday_direction_id;
-$service_label=$sohum_intercity_south_weekday_service_label;
-$order=$sohum_intercity_south_weekday_common_order;
-$common_stop=$sohum_intercity_south_weekday_common_stop_id;
-$service_ids = $sohum_intercity_south_weekday_service_ids;
-}
-
-
+// http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=303&service_id=792&direction_id=6
 // SoHum local / North
-$sohum_local_north_weekday_url = 'sohum-local/north';
-$sohum_local_north_weekday_route_id = 303;
-$sohum_local_north_weekday_direction_id = 5;
-$sohum_local_north_weekday_common_stop_id = 10070;
-$sohum_local_north_weekday_common_order = 'ASC';
-$sohum_local_north_weekday_service_label = 'Weekday';
-$sohum_local_north_weekday_service_ids = array(792,810,813,934);
-
-if ($_GET['urlvar']==$sohum_local_north_weekday_url || $_GET['urlvar']==$sohum_local_north_weekday_url.'/')
-{$route_id=$sohum_local_north_weekday_route_id;
-$direction_id=$sohum_local_north_weekday_direction_id;
-$service_label=$sohum_local_north_weekday_service_label;
-$order=$sohum_local_north_weekday_common_order;
-$common_stop=$sohum_local_north_weekday_common_stop_id;
-$service_ids = $sohum_local_north_weekday_service_ids;
-}
+'sohum-local/north' => array(
+	'route_id' => 303,
+	'direction_id' => 5,
+	'common_stop_id' => 10075,
+	'common_order' => 'ASC',
+	'service_label' => 'Weekday',
+	'service_ids' => array(792)
+),
 
 // SoHum local / South
-$sohum_local_south_weekday_url = 'sohum-local/south';
-$sohum_local_south_weekday_route_id = 303;
-$sohum_local_south_weekday_direction_id = 6;
-$sohum_local_south_weekday_common_stop_id = 10070;
-$sohum_local_south_weekday_common_order = 'DESC';
-$sohum_local_south_weekday_service_label = 'Weekday';
-$sohum_local_south_weekday_service_ids = array(792,810,813,934);
-
-if ($_GET['urlvar']==$sohum_local_south_weekday_url || $_GET['urlvar']==$sohum_local_south_weekday_url.'/')
-{$route_id=$sohum_local_south_weekday_route_id;
-$direction_id=$sohum_local_south_weekday_direction_id;
-$service_label=$sohum_local_south_weekday_service_label;
-$order=$sohum_local_south_weekday_common_order;
-$common_stop=$sohum_local_south_weekday_common_stop_id;
-$service_ids = $sohum_local_south_weekday_service_ids;
-}
+'sohum-local/south' => array(
+	'route_id' => 303,
+	'direction_id' => 6,
+	'common_stop_id' => 780763,
+	'common_order' => 'DESC',
+	'service_label' => 'Weekday',
+	'service_ids' => array(792)
+),
 
 
+//  http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=2597&service_id=2361&direction_id=6
+// Tish Non Village
+'tishnon/north' => array(
+	'route_id' => 2597,
+	'direction_id' => 5,
+	'common_stop_id' => 1250,
+	'common_order' => 'ASC',
+	'service_label' => 'Weekday, beginning July 6, 2015',
+	'service_ids' => array(2361)
+),
+
+
+'tishnon/south' => array(
+	'route_id' => 2597,
+	'direction_id' => 6,
+	'common_stop_id' => 1250,
+	'common_order' => 'DESC',
+	'service_label' => 'Weekday, beginning July 6, 2015',
+	'service_ids' => array(2361)
+),
+
+// Ending 7/4/2015 (Mon-Fri)
+// 2360
+
+// Starting 7/5/2015 (Mon-Fri) 
+// 2361
 
 // Willow Creek / Weekday
-$willowcreek_weekday_url = 'weekday/willowcreek';
-$willowcreek_weekday_route_id = 8;
-$willowcreek_weekday_common_order = 'DESC';
-$willowcreek_weekday_service_label = 'Weekday';
-$willowcreek_weekday_service_ids = array(792,810,813,934);
-
-if ($_GET['urlvar']==$willowcreek_weekday_url || $_GET['urlvar']==$willowcreek_weekday_url.'/')
-{$route_id=$willowcreek_weekday_route_id;
-$service_label=$willowcreek_weekday_service_label;
-$order=$willowcreek_weekday_common_order;
-$service_ids = $willowcreek_weekday_service_ids;
-}
+'weekday/willowcreek/ending' => array(
+	'route_id' => 8,
+	'common_order' => 'DESC',
+	'service_label' => 'Weekday, ending 3-July-2015',
+	'service_ids' => array(2360)
+),
 
 // Willow Creek / Saturday
-$willowcreek_saturday_url = 'saturday/willowcreek';
-$willowcreek_saturday_route_id = 8;
-$willowcreek_saturday_common_order = 'DESC';
-$willowcreek_saturday_service_label = 'Saturday';
-$willowcreek_saturday_service_ids = array(791);
+'weekday/willowcreek' => array('route_id' => 8,
+'common_order' => 'DESC',
+'service_label' => 'Weekday, beginning 6-July-2015',
+'service_ids' => array(2361)
 
-if ($_GET['urlvar']==$willowcreek_saturday_url || $_GET['urlvar']==$willowcreek_saturday_url.'/')
-{$route_id=$willowcreek_saturday_route_id;
-$service_label=$willowcreek_saturday_service_label;
-$order=$willowcreek_saturday_common_order;
-$service_ids = $willowcreek_saturday_service_ids;
-}
+)
+
+);
+
+$urlvar = rtrim( $_GET['urlvar'] ,'/' );
+
+$selected_route_vars = $routes_config[$urlvar];
+
+if (isset($selected_route_vars['route_id'])) {$route_id=$selected_route_vars['route_id'];}
+if (isset($selected_route_vars['direction_id'])) {$direction_id=$selected_route_vars['direction_id'];}
+if (isset($selected_route_vars['service_label'])) {$service_label=$selected_route_vars['service_label'];}
+if (isset($selected_route_vars['order'])) {$order=$selected_route_vars['order'];}
+if (isset($selected_route_vars['common_stop_id'])) {$common_stop=$selected_route_vars['common_stop_id'];}
+if (isset($selected_route_vars['service_ids'])) {$service_ids = $selected_route_vars['service_ids'];}
 
 ?>

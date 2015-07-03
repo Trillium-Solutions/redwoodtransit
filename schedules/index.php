@@ -80,27 +80,54 @@ li {margin-left:20px; padding-right:7px;}
 
 <table>
 
-<tr><td colspan="2">Weekday (Mon-Fri)</td></tr>
+<tr><td colspan="2">Weekday (Mon-Fri) - Effective July 5</td></tr>
 
 <tr>
 
 <tr><td style="padding-left:20px"><a href="weekday/north/">Northbound</a></td><td style="padding-left:20px"><a href="weekday/south/"> Southbound<a></td>
 
-<td style="padding-left:20px"><a href="print/Mainline NB:SB M-F 7:5:2015.pdf">Northbound/Southbound PDF <i>(Effective 7/5)</i></a></td></tr>
-<tr><td colspan="2">Saturday</td></tr>
+<td style="padding-left:20px"><a href="print/Mainline NB:SB M-F 7:5:2015.pdf">Northbound/Southbound PDF </i></a></td></tr>
+
+<tr><td colspan="2">Saturday - Effective July 5</td></tr>
 
 
 <tr><td style="padding-left:20px"><a href="saturday/north/">Northbound</a></td><td style="padding-left:20px"><a href="saturday/south/">Southbound<a></td>
 
-<td style="padding-left:20px" colspan="2"><a href="print/Mainline SB:NB Sat:Sun _7:5:2015.pdf">Northbound/Southbound PDF <i>(Effective 7/5)</i</a></td></tr>
+<td style="padding-left:20px" colspan="2"><a href="print/Mainline SB:NB Sat:Sun _7:5:2015.pdf">Northbound/Southbound PDF</i</a></td></tr>
 
-<tr><td colspan="2">Sunday</td></tr>
+<tr><td colspan="2">Sunday - Effective July 5</td></tr>
 
 <tr>
 
 <td style="padding-left:20px"><a href="sunday/north/">Northbound</a></td><td style="padding-left:20px"><a href="sunday/south/">Southbound<a></td>
 
 <td style="padding-left:20px" colspan="2"><a href="print/Mainline SB:NB Sat:Sun _7:5:2015.pdf">Northbound/Southbound PDF <i>(Effective 7/5)</i></a></td></tr>
+
+<tr><td colspan="3"><hr/></td></tr>
+
+<tr><td colspan="2">Weekday (Mon-Fri) - Ending July 4</td></tr>
+
+<tr>
+
+<tr><td style="padding-left:20px"><a href="weekday/north/ending">Northbound</a></td><td style="padding-left:20px"><a href="weekday/south/ending"> Southbound<a></td>
+
+</tr>
+
+
+<tr><td colspan="2">Saturday - Ending July 4</td></tr>
+
+<tr><td style="padding-left:20px"><a href="saturday/north/ending">Northbound</a></td><td style="padding-left:20px"><a href="saturday/south/ending">Southbound<a></td>
+
+</tr>
+
+<tr><td colspan="2">Sunday - Ending July 4</td></tr>
+
+<tr>
+
+<td style="padding-left:20px"><a href="sunday/north/ending">Northbound</a></td><td style="padding-left:20px"><a href="sunday/south/ending">Southbound<a></td>
+
+</tr>
+
 </table>
 
 <a name="willow_creek"/></a>
@@ -110,16 +137,17 @@ li {margin-left:20px; padding-right:7px;}
 
 <table>
 
-<tr><td colspan="2">Weekday</td></tr>
+<tr><td colspan="2">Weekday - Effective July 6</td></tr>
 
 <tr><td style="padding-left:20px"><a href="weekday/willowcreek/">Weekday - Eastbound/Westbound</a></td>
-<td style="padding-left:20px" colspan="2"><a href="print/Willow Creek M-F_7:5:2015.pdf">PDF <i>(Effective 7/5)</i</a></td></tr>
+<td style="padding-left:20px" colspan="2"><a href="print/Willow Creek M-F_7:5:2015.pdf">PDF</a></td></tr>
 
+<tr><td colspan="2">Weekday - Ending July 3</td></tr>
+
+<tr><td style="padding-left:20px"><a href="weekday/willowcreek/ending">Weekday - Eastbound/Westbound</a></td>
 </tr>
 
-<tr><td colspan="2">Saturday</td></tr>
-
-<tr><td style="padding-left:20px"><a href="saturday/willowcreek/">Saturday - Eastbound/Westbound</a></td>
+</tr>
 
 </table>
 
@@ -151,23 +179,40 @@ li {margin-left:20px; padding-right:7px;}
 
 <p><i>Local Deviated fixed-route service - South Fork - Phillipsville - Redway - Garberville - Benbow</i></p>
 
+<table>
 
+<tr>
+
+<tr><td>Weekday (Mon-Fri)</td></tr>
+
+<td style="padding-left:20px"><a href="sohum-local/north">Northbound</a></td><td style="padding-left:20px"><a href="sohum-local/south">Southbound</a></td>
+
+</tr>
 
 <table>
 
-<tr><td>Weekday (Mon-Fri)</td></tr>
 
 </table>
 
 
 
 <a name="tish-non"/></a>
-<h3>Tish Non Village - <i>Service begins July 5</i></h3>
+<h3>Tish Non Village - <i>Service begins July 6</i></h3>
 
 
 <table>
 
-<tr><td><a href="images/Tish-Non-schedule.jpg">Weekday (Mon-Fri)</a></td></tr>
+<table>
+
+<tr>
+
+<tr><td>Weekday (Mon-Fri)</td></tr>
+
+<tr>
+<td style="padding-left:20px"><a href="tishnon/north">Northbound</a></td><td style="padding-left:20px"><a href="tishnon/south">Southbound</a></td>
+<td style="padding-left:20px"><a href="images/Tish-Non-schedule.jpg">JPEG image</a></td>
+
+</tr>
 
 </table>
 
