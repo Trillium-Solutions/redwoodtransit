@@ -1,0 +1,24 @@
+[24-Dec-2013 05:46:17 America/Los_Angeles] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Too many connections in /home/redwood/public_html/mysql_connect.php on line 12
+[24-Dec-2013 05:46:17 America/Los_Angeles] PHP Notice:  Could not connect to MySQL!
+<br />MySQL Error: Too many connections in /home/redwood/public_html/mysql_connect.php on line 28
+[24-Dec-2013 05:46:17 America/Los_Angeles] PHP Warning:  include(./includes/footer.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/redwood/public_html/mysql_connect.php on line 29
+[24-Dec-2013 05:46:17 America/Los_Angeles] PHP Warning:  include(./includes/footer.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/redwood/public_html/mysql_connect.php on line 29
+[24-Dec-2013 05:46:17 America/Los_Angeles] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './includes/footer.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/redwood/public_html/mysql_connect.php on line 29
+[27-Dec-2013 11:24:22 America/Los_Angeles] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Too many connections in /home/redwood/public_html/mysql_connect.php on line 12
+[27-Dec-2013 11:24:22 America/Los_Angeles] PHP Notice:  Could not connect to MySQL!
+<br />MySQL Error: Too many connections in /home/redwood/public_html/mysql_connect.php on line 28
+[27-Dec-2013 11:24:22 America/Los_Angeles] PHP Warning:  include(./includes/footer.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/redwood/public_html/mysql_connect.php on line 29
+[27-Dec-2013 11:24:22 America/Los_Angeles] PHP Warning:  include(./includes/footer.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/redwood/public_html/mysql_connect.php on line 29
+[27-Dec-2013 11:24:22 America/Los_Angeles] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './includes/footer.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/redwood/public_html/mysql_connect.php on line 29
+[27-Dec-2013 11:25:38 America/Los_Angeles] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Too many connections in /home/redwood/public_html/mysql_connect.php on line 12
+[27-Dec-2013 11:25:38 America/Los_Angeles] PHP Notice:  Could not connect to MySQL!
+<br />MySQL Error: Too many connections in /home/redwood/public_html/mysql_connect.php on line 28
+[27-Dec-2013 11:25:38 America/Los_Angeles] PHP Warning:  include(./includes/footer.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/redwood/public_html/mysql_connect.php on line 29
+[27-Dec-2013 11:25:38 America/Los_Angeles] PHP Warning:  include(./includes/footer.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/redwood/public_html/mysql_connect.php on line 29
+[27-Dec-2013 11:25:38 America/Los_Angeles] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './includes/footer.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/redwood/public_html/mysql_connect.php on line 29
+[16-Mar-2014 19:04:02 America/Los_Angeles] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Too many connections in /home/redwood/public_html/mysql_connect.php on line 12
+[16-Mar-2014 19:04:02 America/Los_Angeles] PHP Notice:  Could not connect to MySQL!
+<br />MySQL Error: Too many connections in /home/redwood/public_html/mysql_connect.php on line 28
+[16-Mar-2014 19:04:02 America/Los_Angeles] PHP Warning:  include(./includes/footer.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/redwood/public_html/mysql_connect.php on line 29
+[16-Mar-2014 19:04:02 America/Los_Angeles] PHP Warning:  include(./includes/footer.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/redwood/public_html/mysql_connect.php on line 29
+[16-Mar-2014 19:04:02 America/Los_Angeles] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './includes/footer.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/redwood/public_html/mysql_connect.php on line 29

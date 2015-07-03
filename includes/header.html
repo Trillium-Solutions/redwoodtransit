@@ -1,0 +1,61 @@
+<?php # Script 13.1 - header.html
+// This page begins the HTML header for the site.
+
+// Start output buffering.
+ob_start();
+// Initialize a session.
+session_start();
+
+// Check for a $page_title value.
+if (!isset($page_title)) {
+	$page_title = 'Redwood Transit System';
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="icon" type="image/png" href="http://www.hta.org/images/icon.png"/>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title><?php echo $page_title; ?></title>
+	<link href="http://www.redwoodtransit.org/css/main.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<?php
+echo '<style type="text/css" media="all">';
+
+echo 'body {margin:8px}';
+
+echo '#green_bar_header {background-color: #030; border-top: 2px solid black; color:#ffcc40; padding:2px; text-align: center; margin:0px; width:100%;}';
+
+
+if (isset($css)) {echo $css;}
+
+echo '</style>';
+
+?>
+
+</head>
+<body>
+
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-2025592-1'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+
+<img src="images/rts_logo.gif" alt="" border="0" width="252" height="81" />
+
+<?php
+
+echo '<div id="green_bar_header">'.$page_title.'</div>';
+
+?>
+
+
+
+
+
+<div id="Content">
+<!-- End of Header -->
