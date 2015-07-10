@@ -5,7 +5,7 @@ ob_start();
 // Initialize a session.
 session_start();
 
-DEFINE ('DB_TYPE', 'postgres');
+
 
 require_once ('../postgres_connect.php');
 
