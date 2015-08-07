@@ -105,7 +105,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 Read <a href="trip_planner.html">info and terms &amp; conditions</a>.  Trip planning is provided using <a href="http://www.google.com/transit">Google Maps</a>.
 </span>
 
-<form name="f" action="https://www.google.com/transit"><input type="hidden" name="ie" value="UTF8"/><input type="hidden" name="f" value="d"/>
+<form name="f" action="http://jump.trilliumtransit.com/redirect.php"><input type="hidden" name="ie" value="UTF8"/><input type="hidden" name="f" value="d"/><input type="hidden" value="1" name="agency">
     <table>
         <tr>
             <td style="font-size:14px;"><strong>Start</strong></td>
