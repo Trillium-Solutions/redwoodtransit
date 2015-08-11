@@ -60,7 +60,7 @@ $routes_config = array(
 	'common_stop_id' => 1252,
 	'common_order' => 'DESC',
 	'service_label' => 'Sunday',
-	'service_ids' => array(2366)
+	'service_ids' => array(790)
 ),
 
 // Mainline / Northbound / Sunday
@@ -70,7 +70,7 @@ $routes_config = array(
 	'common_stop_id' => 1252,
 	'common_order' => 'ASC',
 	'service_label' => 'Sunday',
-	'service_ids' => array(2366)
+	'service_ids' => array(790)
 ),
 
 // SoHum intercity / North
