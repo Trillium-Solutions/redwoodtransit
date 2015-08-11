@@ -86,33 +86,34 @@ li {margin-left:20px; padding-right:7px;}
 
 <td style="padding-left:20px"><a href="print/Mainline NB:SB M-F 7:5:2015.pdf">Northbound/Southbound PDF </i></a></td></tr>
 
-<tr><td colspan="2">Weekend (Sat-Sun)</td></tr>
+<tr><td colspan="2">Saturday</td></tr>
 
+<tr><td style="padding-left:20px"><a href="saturday/north/">Northbound</a></td>
 
-<!-- 
-<tr><td style="padding-left:20px"><a href="saturday/north/">Northbound</a></td><td style="padding-left:20px"><a href="saturday/south/">Southbound<a></td>
- -->
-
-<td style="padding-left:20px" colspan="2"><a href="print/RTS%20Northbound%20Weekend%2005-July-2015.png">Northbound PDF</a></td>
-
-<td style="padding-left:20px" colspan="2"><a href="print/RTS%20Southbound%20Weekend%2005-July-2015.png">Southbound PDF</a></td>
+<td style="padding-left:20px"><a href="saturday/south/">Southbound<a></td>
 
 </tr>
 
+<tr>
 
-<!-- 
+<td style="padding-left:20px" colspan="2"><a href="print/RTS%20Northbound%20Weekend%2005-July-2015.png">Sat/Sun Northbound printable</a></td>
+
+</tr>
+
 <tr><td colspan="2">Sunday</td></tr>
 
-<tr><td colspan="2" style="padding-left:20px">Call the HTA office at 707-443-0826 for the Saturday timetable.</td></tr>
- -->
-
-<!-- 
 <tr>
 
 <td style="padding-left:20px"><a href="sunday/north/">Northbound</a></td><td style="padding-left:20px"><a href="sunday/south/">Southbound<a></td>
 
-<td style="padding-left:20px" colspan="2"><a href="print/Mainline SB:NB Sat:Sun _7:5:2015.pdf">Northbound/Southbound PDF <i>(Effective 7/5)</i></a></td></tr>
- -->
+</tr>
+
+<tr>
+
+<td style="padding-left:20px" colspan="2"><a href="print/RTS%20Northbound%20Weekend%2005-July-2015.png">Sat/Sun Northbound printable</a></td>
+
+
+</tr>
 
 
 </table>

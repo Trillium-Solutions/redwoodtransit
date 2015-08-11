@@ -17,7 +17,7 @@ $routes_config = array(
     'direction_id' => 5,
     'common_stop_id' => 1252,
     'order' => 'ASC',
-    'service_label' => 'Weekday, beginning 6-July-2015',
+    'service_label' => 'Weekday',
     'service_ids' => array(792,2361)
     ),
         
@@ -27,30 +27,8 @@ $routes_config = array(
 	'direction_id' => 6,
 	'common_stop_id' => 1252,
 	'common_order' => 'DESC',
-	'service_label' => 'Weekday, beginning 6-July-2015',
+	'service_label' => 'Weekday',
 	'service_ids' => array(792,2361)
-),
-
-// Mainline / Northound / Weekday
-    'weekday/north/ending'  => array(
-    'route_id' => 1,
-    'direction_id' => 5,
-    'common_stop_id' => 1252,
-    'order' => 'ASC',
-    'service_label' => 'Weekday, ending 4-July-2015',
-    'service_ids' => array(792,810,813,934,2360)
-    ),
-    
-    //http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=1&service_id=2360&direction_id=5
-    
-// Mainline / Southbound / Weekday
-'weekday/south/ending' => array(
-	'route_id' => 1,
-	'direction_id' => 6,
-	'common_stop_id' => 1252,
-	'common_order' => 'DESC',
-	'service_label' => 'Weekday, ending 4-July-2015',
-	'service_ids' => array(792,810,813,934,2360)
 ),
 
 // Mainline / Northound / Saturday
@@ -60,52 +38,19 @@ $routes_config = array(
 	'direction_id' => 5,
 	'common_stop_id' => 1252,
 	'common_order' => 'ASC',
-	'service_label' => 'saturday',
-	'service_ids' => array(2364,2366)
+	'service_label' => 'Saturday',
+	'service_ids' => array(791,2366)
 ),
 
 
-// service_id for service ending 5-July-2015: 2364
-// http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=1&service_id=2364&direction_id=5
-
-// continuing Sat-Sun service: 2366 http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=1&service_id=2366&direction_id=5
-
 // Mainline / Southbound / Saturday
-'saturday/south/ending' => array(
+'saturday/south' => array(
 	'route_id' => 1,
 	'direction_id' => 6,
 	'common_stop_id' => 1252,
 	'common_order' => 'DESC',
 	'service_label' => 'Saturday',
-	'service_ids' => array(2366)
-),
-
-
-
-// service_id for service ending 5-July-2015: 2364
-// http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=1&service_id=2364&direction_id=5
-
-// continuing Sat-Sun service: 2366 http://gtfs.trilliumtransit.com/copy_service_for_route.php?agency_id=1&route_id=1&service_id=2366&direction_id=5
-
-// Mainline / Southbound / Saturday
-'saturday/south/ending' => array(
-	'route_id' => 1,
-	'direction_id' => 6,
-	'common_stop_id' => 1252,
-	'common_order' => 'DESC',
-	'service_label' => 'Saturday',
-	'service_ids' => array(2364,2366)
-),
-
-// Mainline / Northound / Sunday
-
-'saturday/north' => array(
-	'route_id' => 1,
-	'direction_id' => 5,
-	'common_stop_id' => 1252,
-	'common_order' => 'ASC',
-	'service_label' => 'saturday',
-	'service_ids' => array(2366)
+	'service_ids' => array(791,2366)
 ),
 
 // Mainline / Southbound / Sunday
@@ -114,7 +59,17 @@ $routes_config = array(
 	'direction_id' => 6,
 	'common_stop_id' => 1252,
 	'common_order' => 'DESC',
-	'service_label' => 'sunday',
+	'service_label' => 'Sunday',
+	'service_ids' => array(2366)
+),
+
+// Mainline / Northbound / Sunday
+'sunday/north' => array(
+	'route_id' => 1,
+	'direction_id' => 5,
+	'common_stop_id' => 1252,
+	'common_order' => 'ASC',
+	'service_label' => 'Sunday',
 	'service_ids' => array(2366)
 ),
 
