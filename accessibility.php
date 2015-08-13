@@ -85,20 +85,19 @@ padding-top:15px;
 
 <ul>
 <li>All buses and transit centers are fully accessible.</li>
-<li>You can board ETS, RTS, and AMRTS directly from the station platform.  Buses have a ramp that extends for easier boarding if you need it.</li>
-<li>Buses are equipped with either a boarding ramp or power lift.  Some of our buses are low-floor buses that can “kneel”, lowering the first step closer to the curb for easier boarding.  Just ask the operator.</li>
 <li>All buses have priority seating areas inside by the door for seniors and riders with limited mobility, and spaces for mobility devices.</li>
 </ul>
 
-<h4>Types of mobility devices allowed</h4>
+<h4>Wheelchair Users</h4>
 
-<p><strong><i>Wheelchairs and Scooters</i></strong></p>
+<p><strong><i>Accessibility</i></strong></p>
+<p>All of our buses are wheelchair accessible with either lifts or ramps. In order to assure your safety on the bus, we recommend your mobility device be equipped with its own safety seat belt and brakes in good, working condition.</p>
 
-<p>The power lifts on buses can hold mobility devices up to 30 inches wide and 48 inches long, weighing less than 600 pounds when occupied.</p>
+<p><strong><i>What is considered a wheelchair?</i></strong></p>
+<p>A wheel chair is a mobility aid belonging to any class of 3 or more wheeled devices that has 3 or more tires, working indoors, designed or modified for and used by individuals with mobility impairments, whether operated manually or powered.<br/>
 
-<strong><i>Scooters</i></strong>
+<p>We transport all wheelchairs regardless of size and weight as long as it can fit aboard the bus and our ramp and lift can accommodate it.</p> 
 
-<p>You can bring an electric scooters on the buses as long as they meet the same physical specifications of a common wheelchair. If your electric scooter can not be properly secured, the driver  will ask that you place your mobility device in the space provided on the bus.</p>
 
 <h4>Securement straps for mobility devices on buses</h4>
 
