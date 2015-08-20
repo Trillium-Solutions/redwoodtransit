@@ -26,7 +26,6 @@ $routes_config = array(
 	'route_id' => 1,
 	'direction_id' => 6,
 	'common_stop_id' => 1252,
-	'common_order' => 'DESC',
 	'service_label' => 'Weekday',
 	'service_ids' => array(792,2361)
 ),
@@ -37,7 +36,6 @@ $routes_config = array(
 	'route_id' => 1,
 	'direction_id' => 5,
 	'common_stop_id' => 1252,
-	'common_order' => 'ASC',
 	'service_label' => 'Saturday',
 	'service_ids' => array(791,2366)
 ),
@@ -48,7 +46,6 @@ $routes_config = array(
 	'route_id' => 1,
 	'direction_id' => 6,
 	'common_stop_id' => 1252,
-	'common_order' => 'DESC',
 	'service_label' => 'Saturday',
 	'service_ids' => array(791,2366)
 ),
@@ -58,7 +55,6 @@ $routes_config = array(
 	'route_id' => 1,
 	'direction_id' => 6,
 	'common_stop_id' => 1252,
-	'common_order' => 'DESC',
 	'service_label' => 'Sunday',
 	'service_ids' => array(790)
 ),
@@ -68,7 +64,6 @@ $routes_config = array(
 	'route_id' => 1,
 	'direction_id' => 5,
 	'common_stop_id' => 1252,
-	'common_order' => 'ASC',
 	'service_label' => 'Sunday',
 	'service_ids' => array(790)
 ),
@@ -90,7 +85,6 @@ array (
 	'route_id' => 822,
 	'direction_id' => 6,
 	'common_stop_id' => 1255,
-	'common_order' => 'DESC',
 	'service_label' => 'Weekday',
 	'service_ids' => array(792,810,813,934)
 ),
@@ -101,7 +95,6 @@ array (
 	'route_id' => 303,
 	'direction_id' => 5,
 	'common_stop_id' => 10075,
-	'common_order' => 'ASC',
 	'service_label' => 'Weekday',
 	'service_ids' => array(792)
 ),
@@ -111,7 +104,6 @@ array (
 	'route_id' => 303,
 	'direction_id' => 6,
 	'common_stop_id' => 780763,
-	'common_order' => 'DESC',
 	'service_label' => 'Weekday',
 	'service_ids' => array(792)
 ),
@@ -123,7 +115,6 @@ array (
 	'route_id' => 2597,
 	'direction_id' => 5,
 	'common_stop_id' => 1250,
-	'common_order' => 'ASC',
 	'service_label' => 'Weekday, beginning July 6, 2015',
 	'service_ids' => array(2361)
 ),
@@ -133,31 +124,25 @@ array (
 	'route_id' => 2597,
 	'direction_id' => 6,
 	'common_stop_id' => 1250,
-	'common_order' => 'DESC',
 	'service_label' => 'Weekday, beginning July 6, 2015',
 	'service_ids' => array(2361)
 ),
 
-// Ending 7/4/2015 (Mon-Fri)
-// 2360
 
-// Starting 7/5/2015 (Mon-Fri) 
-// 2361
-
-// Willow Creek / Weekday
-'weekday/willowcreek/ending' => array(
-	'route_id' => 8,
-	'common_order' => 'DESC',
-	'service_label' => 'Weekday, ending 3-July-2015',
-	'service_ids' => array(2360)
+// Willow Creek / Weekday / East
+'weekday/willowcreek/east' => array('route_id' => 8,
+'direction_id' => 7,
+'common_stop_id' => 1260,
+'service_label' => 'Mon-Fri',
+'service_ids' => array(2361)
 ),
 
-// Willow Creek / Saturday
-'weekday/willowcreek' => array('route_id' => 8,
-'common_order' => 'DESC',
-'service_label' => 'Weekday, beginning 6-July-2015',
+// Willow Creek / Weekday / West
+'weekday/willowcreek/west' => array('route_id' => 8,
+'direction_id' => 8,
+'common_stop_id' => 1260,
+'service_label' => 'Mon-Fri',
 'service_ids' => array(2361)
-
 )
 
 );

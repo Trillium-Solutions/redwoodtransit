@@ -125,9 +125,10 @@ li {margin-left:20px; padding-right:7px;}
 
 <table>
 
-<tr><td colspan="2">Weekday</td></tr>
+<tr><td colspan="2">Weekday (Mon-Fri)</td></tr>
 
-<tr><td style="padding-left:20px"><a href="weekday/willowcreek/">Weekday - Eastbound/Westbound</a></td>
+<tr><td style="padding-left:20px"><a href="weekday/willowcreek/east">Eastbound</a></td>
+<td style="padding-left:20px"><a href="weekday/willowcreek/west">Westbound</a></td>
 <td style="padding-left:20px" colspan="2"><a href="print/Willow Creek M-F_S 2015.pdf">PDF</a></td></tr>
 
 

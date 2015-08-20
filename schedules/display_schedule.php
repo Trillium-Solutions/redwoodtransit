@@ -27,7 +27,8 @@ require_once ('config_schedules.inc.php');
 
 if (isset($route_id)) {
 
-if (isset($direction_id)) {if ($direction_id==5) {$order='asc';} elseif ($direction_id==6) {$order='desc';}} else $order='desc';
+if (isset($direction_id)) {if ($direction_id==5) {$order='asc';} elseif ($direction_id==6) {$order='desc';} elseif ($direction_id==7) {$order ='ASC';} elseif ($direction_id==8) {$order ='DESC';}
+} else $order='desc';
 
 
 
@@ -38,9 +39,15 @@ while ($row=db_fetch_array($route_result, MYSQL_ASSOC))
 {$route_long_name=$row['route_long_name'];
 $route_short_name=$row['route_short_name'];}
 
+$direction_query = "select direction_label from directions where direction_id=$direction_id";
+$direction_result = db_query($direction_query);
+
+while ($row=db_fetch_array($direction_result, MYSQL_ASSOC))
+{$direction_label=$row['direction_label'];}
+
 
 // Set the page title and include the HTML header.
-$page_title = $route_long_name." ".$service_label;
+$page_title = $route_long_name." (".$direction_label.") ".$service_label;
 
 $css="th, td {font-size:10px;
 	border-bottom: black;
@@ -152,97 +159,7 @@ echo '>Evening/night (approx 3:55pm to 11pm)</option></select><input type="submi
 }
 
 
-if ($route_id==8) {
 
-$directions_query="select distinct direction_label,trips.direction_id from trips inner join directions on trips.direction_id=directions.direction_id where trips.route_id=$route_id";
-
-$directions_result = db_query($directions_query);
-
-echo '<table border="0" width="100%"><tr>';
-
-while ($directions_row = db_fetch_array($directions_result, MYSQL_ASSOC)) {
-
-echo '<td style="border-bottom:0px;" valign="top"><h3>'.$directions_row['direction_label'].'</h3';
-
-$first_trip=true;
-
-$trips_query = "select DISTINCT MAX(arrival_time) as last_arrival, MIN(arrival_time) as first_arrival,  trips.trip_id, headsigns.headsign as trip_headsign, calendar.service_label from trips left join stop_times on trips.trip_id=stop_times.trip_id inner join calendar on trips.service_id=calendar.calendar_id
-left join headsigns on trips.headsign_id = headsigns.headsign_id
-where trips.direction_id=".$directions_row['direction_id']." AND trips.route_id =$route_id AND service_id IN (".implode(",",$service_ids).") GROUP BY trips.trip_id, headsigns.headsign, calendar.service_label ORDER BY first_arrival";
-
-$trips_result = db_query($trips_query);
-
-echo '<p><table cellspacing="0">';
-
-while ($row = db_fetch_array($trips_result, MYSQL_ASSOC)) {
-
-
-$trip_id=$row['trip_id'];
-
-// query for stops
-
-$stops_query = "select to_char(arrival_time, 'HH12:MI am') AS arrival_time, to_char(departure_time, 'HH12:MI am') AS departure_time, stops.stop_id, stops.stop_name, stops.zone_id, stops.stop_list_order, stops.stop_lat,stops.stop_lon from stop_times inner join stops on stop_times.stop_id=stops.stop_id where stop_times.trip_id=$trip_id order by stop_sequence ASC";
-
-$stops_result = db_query($stops_query);
-
-if ($first_trip==true) {
-
-echo '<tr><th id="stop">Stop</th></tr>
-<tr><td colspan="2" style=""><i>(click name to show on map)</i></td>';
-
-}
-
-$first_stop_time=true;
-
-while ($row = db_fetch_array($stops_result, MYSQL_ASSOC)) {
-
-
-echo '<tr><td';
-
-if ($first_stop_time==true) {echo ' style="border-top:2px solid black"';}
-
-echo '><nobr><a href="http://maps.google.com/maps?f=q&hl=en&q='.$row['stop_lat'].'+,'.$row['stop_lon'].'&z=17">'.$row['stop_name'].'</a>&nbsp;&nbsp;&nbsp;</nobr></td><td';
-
-if ($first_stop_time==true) {echo ' style="border-top:2px solid black"';}
-
-echo '>';
-
-if ($row['arrival_time'] == $row['departure_time'])
-
-{echo $row['arrival_time'];}
-
-else {echo 'arrives '.$row['arrival_time'].' / departs '.$row['departure_time'];}
-
-echo '</td></tr>';
-
-$first_stop_time=false;
-
-}
-
-
-$first_trip=false;
-
-}
-
-echo '</table></p>';
-
-echo '</td>';
-
-}
-
-echo '</tr></table>
-
-<p>Connection to RTS Mainline with service to Fortuna, Eureka, McKinleyville, Trinidad, and other destinations is available at the Arcata Transit Center.  See the full RTS Mainline schedule below:<br/>
-<table border="0">
-<tr><td style="border-bottom:0px;"><i>Weekday</i>&nbsp;&nbsp;&nbsp;</td><td style="border-bottom:0px;"><a href="http://www.redwoodtransit.org/schedules/weekday/north/">Northbound</a>&nbsp;&nbsp;&nbsp;</td><td style="border-bottom:0px;"><a href="http://www.redwoodtransit.org/schedules/weekday/south/">Southbound</a>&nbsp;&nbsp;&nbsp;</td></tr>
-<tr><td style="border-bottom:0px;"><i>Saturday</i>&nbsp;&nbsp;&nbsp;</td><td style="border-bottom:0px;"><a href="http://www.redwoodtransit.org/schedules/saturday/north/">Northbound</a>&nbsp;&nbsp;&nbsp;</td><td style="border-bottom:0px;"><a href="http://www.redwoodtransit.org/schedules/saturday/south/">Southbound</a>&nbsp;&nbsp;&nbsp;</td></tr></table>
-</p>
-<p>Connection to <a href="http://www.trinitytransit.org">Trinity Transit</a> with service to Weaverville and Redding is availanble in Willow Creek: See <a href="http://www.trinitytransit.org/timetables/willow-creek/">Weaverville/Willow Creek timetable</a>.</p>';
-
-}
-
-
-else {
 if (isset($_GET['trip_id'])) {$trip_conditional='AND trips.trip_id='.$_GET['trip_id']; echo '<h4>Single trip view</h4>';} else {$trip_conditional='';}
 
 $trips_query = "select DISTINCT stop_times.arrival_time, trips.trip_short_name, trips.trip_id, headsigns.headsign, calendar.service_label, calendar.calendar_id, trips.service_id from trips left join stop_times on trips.trip_id=stop_times.trip_id inner join calendar on trips.service_id=calendar.calendar_id
@@ -258,18 +175,14 @@ while ($row=db_fetch_array($trips_result)) {array_push($trips_array, $row['trip_
 $trips_list = implode (",",$trips_array);
 
 
-// query for stops
-
-if ($direction_id==5) {$sort_order='DESC';} elseif ($direction_id==6) {$sort_order='ASC';}
-
 $stops_query = "select DISTINCT stops.stop_id,stops.stop_name,stops.zone_id,stops.stop_list_order,stops.stop_list_order_sortqual,stops.stop_lat,stops.stop_lon from stop_times inner join stops on stop_times.stop_id=stops.stop_id where stop_times.trip_id in ($trips_list) order by stops.stop_list_order $order,stops.stop_list_order_sortqual $order";
 
 
 $stops_result = db_query($stops_query);
 
 echo '<table cellspacing="0">
-<tr><th id="stop">Stop</th></tr>
-<tr><td><i>(click name for map and schedule detail)</i></td>';
+<tr><th id="stop">Stops (READ DOWN)</th></tr>
+<tr><td><i>click name for map</i></td>';
 
 $colorbackrotate=' class="colorback"';
 
@@ -352,7 +265,15 @@ echo '</tr>
 
 echo '</table>';
 
+
+if ($route_id == 8) {
+
+echo '<p>Connection to RTS Mainline with service to Fortuna, Eureka, McKinleyville, Trinidad, and other destinations is available at the Arcata Transit Center.  <a href="../">See schedules</a>.
+</p>
+<p>Connection to <a href="http://www.trinitytransit.org">Trinity Transit</a> with service to Weaverville and Redding is availanble in Willow Creek: See <a href="http://www.trinitytransit.org/timetables/willow-creek/">Weaverville/Willow Creek timetable</a>.</p>';
+
 }
+
 
 }
 
