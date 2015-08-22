@@ -84,7 +84,10 @@ li {margin-left:20px; padding-right:7px;}
 
 <tr><td style="padding-left:20px"><a href="weekday/north/">Northbound</a></td><td style="padding-left:20px"><a href="weekday/south/"> Southbound<a></td>
 
-<td style="padding-left:20px"><a href="print/Mainline NB:SB M-F 7:5:2015.pdf">Northbound/Southbound PDF </i></a></td></tr>
+</tr>
+<tr><td style="padding-left:20px"><a href="print/RTS%20Northbound%20Weekday.png">Northbound printable </i></a></td></tr>
+
+<tr><td style="padding-left:20px"><a href="print/RTS%20Southbound%20Weekday.png">Southbound printable </i></a></td></tr>
 
 <tr><td colspan="2">Saturday</td></tr>
 
@@ -96,9 +99,16 @@ li {margin-left:20px; padding-right:7px;}
 
 <tr>
 
-<td style="padding-left:20px" colspan="2"><a href="print/RTS%20Northbound%20Weekend%2005-July-2015.png">Sat/Sun Northbound printable</a></td>
+<td style="padding-left:20px" colspan="2"><a href="print/RTS%20Northbound%20Weekend.png">Sat/Sun Northbound printable</a></td>
 
 </tr>
+
+<tr>
+
+<td style="padding-left:20px" colspan="2"><a href="print/RTS%20Southbound%20Weekend.png">Sat/Sun Southbound printable</a></td>
+
+</tr>
+
 
 <tr><td colspan="2">Sunday</td></tr>
 
@@ -110,8 +120,13 @@ li {margin-left:20px; padding-right:7px;}
 
 <tr>
 
-<td style="padding-left:20px" colspan="2"><a href="print/RTS%20Northbound%20Weekend%2005-July-2015.png">Sat/Sun Northbound printable</a></td>
+<td style="padding-left:20px" colspan="2"><a href="print/RTS%20Northbound%20Weekend.png">Sat/Sun Northbound printable</a></td>
 
+</tr>
+
+<tr>
+
+<td style="padding-left:20px" colspan="2"><a href="print/RTS%20Southbound%20Weekend.png">Sat/Sun Southbound printable</a></td>
 
 </tr>
 
@@ -129,7 +144,7 @@ li {margin-left:20px; padding-right:7px;}
 
 <tr><td style="padding-left:20px"><a href="weekday/willowcreek/east">Eastbound</a></td>
 <td style="padding-left:20px"><a href="weekday/willowcreek/west">Westbound</a></td>
-<td style="padding-left:20px" colspan="2"><a href="print/Willow Creek M-F_S 2015.pdf">PDF</a></td></tr>
+<td style="padding-left:20px" colspan="2"><a href="print/Willow%20Creek.png">Printable</a></td></tr>
 
 
 
@@ -152,8 +167,9 @@ li {margin-left:20px; padding-right:7px;}
 <tr>
 
 <td style="padding-left:20px"><a href="sohum-intercity/north/">Northbound</a></td><td style="padding-left:20px"><a href="sohum-intercity/south/">Southbound</a></td>
-
+<td style="padding-left:20px" colspan="2"><a href="print/Southern%20Humboldt%20Intercity.png">Printable</a></td>
 </tr>
+
 
 </table>
 
@@ -170,10 +186,8 @@ li {margin-left:20px; padding-right:7px;}
 <tr><td>Weekday (Mon-Fri)</td></tr>
 
 <td style="padding-left:20px"><a href="sohum-local/north">Northbound</a></td><td style="padding-left:20px"><a href="sohum-local/south">Southbound</a></td>
-
+<td style="padding-left:20px" colspan="2"><a href="print/Southern%20Humboldt%20Local.png">Printable</a></td>
 </tr>
-
-<table>
 
 
 </table>
