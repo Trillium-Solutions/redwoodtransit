@@ -143,6 +143,22 @@ array (
 'common_stop_id' => 1260,
 'service_label' => 'Mon-Fri',
 'service_ids' => array(2361)
+),
+
+// Willow Creek / Saturday / East
+'saturday/willowcreek/east' => array('route_id' => 8,
+'direction_id' => 7,
+'common_stop_id' => 1260,
+'service_label' => 'Saturday',
+'service_ids' => array(2392)
+),
+
+// Willow Creek / Saturday / West
+'saturday/willowcreek/west' => array('route_id' => 8,
+'direction_id' => 8,
+'common_stop_id' => 1260,
+'service_label' => 'Saturday',
+'service_ids' => array(2392)
 )
 
 );

@@ -146,6 +146,11 @@ li {margin-left:20px; padding-right:7px;}
 <td style="padding-left:20px"><a href="weekday/willowcreek/west">Westbound</a></td>
 <td style="padding-left:20px" colspan="2"><a href="print/Willow%20Creek.png">Printable</a></td></tr>
 
+<tr><td colspan="2">Saturday</td></tr>
+
+<tr><td style="padding-left:20px"><a href="saturday/willowcreek/east">Eastbound</a></td>
+<td style="padding-left:20px"><a href="saturday/willowcreek/west">Westbound</a></td>
+<td style="padding-left:20px" colspan="2"><a href="print/Willow%20Creek.png">Printable</a></td></tr>
 
 
 </table>
