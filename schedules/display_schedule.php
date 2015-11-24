@@ -162,8 +162,9 @@ echo '>Evening/night (approx 3:55pm to 11pm)</option></select><input type="submi
 
 if (isset($_GET['trip_id'])) {$trip_conditional='AND trips.trip_id='.$_GET['trip_id']; echo '<h4>Single trip view</h4>';} else {$trip_conditional='';}
 
-$trips_query = "select DISTINCT stop_times.arrival_time, trips.trip_short_name, trips.trip_id, headsigns.headsign, calendar.service_label, calendar.calendar_id, trips.service_id from trips left join stop_times on trips.trip_id=stop_times.trip_id inner join calendar on trips.service_id=calendar.calendar_id
+$trips_query = "select DISTINCT stop_times.arrival_time, trips.trip_short_name, trips.trip_id, blocks.block_label, headsigns.headsign, calendar.service_label, calendar.calendar_id, trips.service_id from trips left join stop_times on trips.trip_id=stop_times.trip_id inner join calendar on trips.service_id=calendar.calendar_id
 left join headsigns on trips.headsign_id = headsigns.headsign_id
+left join blocks on trips.block_id = blocks.block_id
 where trips.route_id =$route_id AND trips.direction_id=$direction_id AND service_id IN (".implode(",",$service_ids).") $trip_conditional $time_of_day_conditional and stop_times.stop_id=$common_stop ORDER BY arrival_time";
 
 // echo $trips_query;
@@ -260,6 +261,29 @@ echo '</td>';
 
 echo '</tr>
 ';
+
+}
+
+if ($route_id == 1) {
+
+	db_data_seek ($trips_result, 0);
+
+	$colorbackrotate=' class="colorback"';
+
+	echo '<th style="text-align:right;margin-right:5px;">Run number</th>';
+
+	while ($row = db_fetch_array($trips_result, MYSQL_ASSOC)) {
+	echo '
+		<td';
+
+	if (in_array($row['service_id'], $supplemental_service_id ) ) {echo ' class="supplemental"';}
+	else {echo $colorbackrotate;}
+
+	if ($colorbackrotate=="") {$colorbackrotate=' class="colorback"';}
+	else {$colorbackrotate="";}
+
+	echo ' style="text-align:center;" align="center"><i>'.$row['block_label'].'</i></td>';
+	}
 
 }
 
