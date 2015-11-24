@@ -176,14 +176,14 @@ while ($row=db_fetch_array($trips_result)) {array_push($trips_array, $row['trip_
 $trips_list = implode (",",$trips_array);
 
 
-$stops_query = "select DISTINCT stops.stop_id,stops.stop_name,stops.zone_id,stops.stop_list_order,stops.stop_list_order_sortqual,stops.stop_lat,stops.stop_lon from stop_times inner join stops on stop_times.stop_id=stops.stop_id where stop_times.trip_id in ($trips_list) order by stops.stop_list_order $order,stops.stop_list_order_sortqual $order";
+$stops_query = "select DISTINCT stops.stop_id,stop_code,stops.stop_name,stops.zone_id,stops.stop_list_order,stops.stop_list_order_sortqual,stops.stop_lat,stops.stop_lon from stop_times inner join stops on stop_times.stop_id=stops.stop_id where stop_times.trip_id in ($trips_list) order by stops.stop_list_order $order,stops.stop_list_order_sortqual $order";
 
 
 $stops_result = db_query($stops_query);
 
 echo '<table cellspacing="0">
 <tr><th id="stop">Stops (READ DOWN)</th></tr>
-<tr><td><i>click name for map</i></td>';
+<tr><td><i>click name for map</i></td><th>ID</th>';
 
 $colorbackrotate=' class="colorback"';
 
@@ -204,7 +204,9 @@ echo ' style="text-align:center;" align="center"><i>'.$row['trip_short_name'].'<
 
 while ($row = db_fetch_array($stops_result, MYSQL_ASSOC)) {
 
-echo '<tr><th><nobr><a href="http://maps.google.com/maps?f=q&hl=en&q='.$row['stop_lat'].'+,'.$row['stop_lon'].'&z=17">'.$row['stop_name'].'</a>&nbsp;&nbsp;&nbsp;</nobr></th>';
+echo '<tr><th><nobr><a href="http://maps.google.com/maps?f=q&hl=en&q='.$row['stop_lat'].'+,'.$row['stop_lon'].'&z=17">'.$row['stop_name'].'</a>&nbsp;&nbsp;&nbsp;</nobr></th>
+<td>'.$row['stop_code'].'&nbsp;&nbsp;&nbsp;</td>
+';
 
 $stop_id=$row['stop_id'];
 
@@ -270,7 +272,7 @@ if ($route_id == 1) {
 
 	$colorbackrotate=' class="colorback"';
 
-	echo '<th style="text-align:right;margin-right:5px;">Run number</th>';
+	echo '<th colspan="2" style="text-align:right;padding-right:6px;">Run number</th>';
 
 	while ($row = db_fetch_array($trips_result, MYSQL_ASSOC)) {
 	echo '
