@@ -63,11 +63,6 @@ td {border-bottom:1px solid #ccc;padding:1px;padding-right:10px}
 
 </blockquote>
 
-<p>If your comments are on the website, you can direct them to:</p>
-<blockquote>
-<strong>feedback &#xAB;at&#xBB; trilliumtransit.com</strong>
-<br/>(To make this address usable, replace &#xAB;at&#xBB; with "@".  <a href="http://en.wikipedia.org/wiki/Address_munging">See why we did this.</a>)</blockquote>
-
 
 </div>
 
@@ -76,8 +71,8 @@ td {border-bottom:1px solid #ccc;padding:1px;padding-right:10px}
 </div>
 
 <div id="Footer">
-<p><a href="http://groups.google.com/group/humboldttransit/">Email updates</a> • <a href="http://www.redwoodtransit.org/jobs/"> Jobs @ HTA</a> • <a href="contact.php">Contact/Feedback</a> • <a href="link_to/">Link to redwoodtransit.org</a>
-<br/><a href="credits.html">Site Credits</a> • <a href="http://www.spreadfirefox.com/?q=affiliates&amp;id=0&amp;t=219"><img border="0" alt="Firefox 2" title="Firefox 2" src="http://sfx-images.mozilla.org/affiliates/Buttons/firefox2/ff2b80x15.gif"/></a></p>
+<p><a href="http://www.redwoodtransit.org/jobs/"> Jobs @ HTA</a> • <a href="contact.php">Contact/Feedback</a> • <a href="link_to/">Link to redwoodtransit.org</a>
+<br/><a href="credits.html">Site Credits</a></p>
 </div>
 		
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
