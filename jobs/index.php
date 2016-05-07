@@ -37,28 +37,18 @@ $jobs_result = db_query($jobs_query);
 
 <h2>Current opportunities</h2>
 
-<?php
+<p>The Humboldt Transit Authority is currently hiring bus drivers. Our drivers operate all types of buses that are assigned to the Humboldt Transit Authority fleet.<br>
 
-if (db_num_rows($jobs_result) != 0) {
+Motivated individuals seeking to apply must be in possession of a valid Class C driver's license, and must present with their application, a current DMV printout of their driving record.<p>
 
-$i=0;
+<p>Certified on-site training is provided.
 
-while ($row = db_fetch_array($jobs_result, MYSQL_ASSOC)) {
-echo "<h3";
+Drivers are responsible for the safe operation of all equipment in compliance with federal, state, county and municipal regulations.
 
-if ($i != 0) {echo ' style="border-bottom:1px solid #ccc; padding-top:5px;"';}
+All drivers will begin employment with part-time status and the option to work into a full time position. Full-Time drivers receive increases in compensation and a desirable benefits package.
 
-echo ">&#xBB; ".$row['title']."</h3>
+Starting wage: $14.22/hour. Please apply using HTA's standard employment agreement available at hta.org.  <a href="http://www.redwoodtransit.org/jobs/Hiring_Bus_Drivers.pdf">Hiring Bus Drivers.PDF</a>
 
-<blockquote>".$row['body']."</blockquote>";
-$i++;
-}
-
-}
-
-else {echo "<p><i>There are no current opportunities posted.</i></p>";}
-
-?>
 
 
 <p style="line-height:130%;border-top:1px solid black;font-size:75%;padding-top:15px;"><strong>HTA contact/location:</strong>
