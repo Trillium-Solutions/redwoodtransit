@@ -134,7 +134,7 @@ array (
 'direction_id' => 7,
 'common_stop_id' => 1260,
 'service_label' => 'Mon-Fri',
-'service_ids' => array(2361)
+'service_ids' => array(792)
 ),
 
 // Willow Creek / Weekday / West
@@ -142,7 +142,7 @@ array (
 'direction_id' => 8,
 'common_stop_id' => 1260,
 'service_label' => 'Mon-Fri',
-'service_ids' => array(2361)
+'service_ids' => array(792)
 ),
 
 // Willow Creek / Saturday / East
@@ -150,7 +150,7 @@ array (
 'direction_id' => 7,
 'common_stop_id' => 1260,
 'service_label' => 'Saturday',
-'service_ids' => array(2392)
+'service_ids' => array(791)
 ),
 
 // Willow Creek / Saturday / West
@@ -158,7 +158,7 @@ array (
 'direction_id' => 8,
 'common_stop_id' => 1260,
 'service_label' => 'Saturday',
-'service_ids' => array(2392)
+'service_ids' => array(791)
 )
 
 );
